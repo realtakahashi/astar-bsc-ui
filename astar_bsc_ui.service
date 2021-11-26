@@ -1,0 +1,11 @@
+[Unit]
+Description = Bridge UI
+After=network-online.target
+
+[Service]
+ExecStart=/home/es_admin/testnet_env/astar-bsc-ui/app_start.bash
+Restart=always
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
